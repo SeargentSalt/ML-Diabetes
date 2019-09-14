@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
   return (
     <header style ={headerStyle}>
-      <h1>Toe Sucker</h1>
+      
     </header>
   )
 }
@@ -14,35 +14,3 @@ const headerStyle = {
     textAlign: 'center',
     padding: '10px'
   }
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-"Header.js" [noeol] 16L, 270C
