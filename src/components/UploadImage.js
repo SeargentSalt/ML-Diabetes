@@ -1,25 +1,31 @@
-const React = require('react')
-
+import React from 'react';
+import ImageUploader from 'react-images-upload';
+ 
 class UploadImage extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      file: null
+ 
+    constructor(props) {
+        super(props);
+         this.state = { pictures: [] };
+         this.onDrop = this.onDrop.bind(this);
     }
-    this.handleChange = this.handleChange.bind(this)
-  }
-  handleChange(event) {
-    this.setState({
-      file: URL.createObjectURL(event.target.files[0])
-    })
-  }
-  render() {
-    return (
-      <div>
-        <input type="file" onChange={this.handleChange}/>
-        <img style={{width: 500, height: 500}} src={this.state.file} alt="hi"/>
-      </div>
-    );
-  }
+ 
+    onDrop(picture) {
+        this.setState({
+            pictures: this.state.pictures.concat(picture),
+        });
+    }
+ 
+    render() {
+        return (
+            <ImageUploader
+                withIcon={true}
+                withPreview={true}
+                buttonText='Choose images'
+                onChange={this.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={5242880}
+            />
+        );
+    }
 }
-module.exports = UploadImage
+export default UploadImage;

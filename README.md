@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### INSTALLS
+
+npm i -S react-flip-move
+https://github.com/joshwcomeau/react-flip-move
+
+npm install --save react-images-upload
+https://www.npmjs.com/package/react-images-upload
