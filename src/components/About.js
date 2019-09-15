@@ -6,11 +6,14 @@ export default function About () {
 
  <Jumbotron>
    <h1>What is Diabetic Retinopathy </h1>
-   <p>Millions of people suffer from diabetic retinopathy, the leading cause of blindness among working aged adults. Aravind Eye Hospital in India hopes to detect and prevent this disease among people living in rural areas where medical screening is difficult to conduct.  </p>
+   <p>Millions of people suffer from diabetic retinopathy, the leading cause of blindness among working aged adults. Many rural area in third world countries who do not have access to screening and medication will go blind. Our goal is to help doctors quickly screen images for the diseases as usually only highly trained doctors can identify images.  </p>
 
 <p>
     <Button href="https://www.mayoclinic.org/diseases-conditions/diabetic-retinopathy/symptoms-causes/syc-20371611" variant="primary">Learn more</Button>
-   </p>
+</p>
+
  </Jumbotron>
+
+
   )
 }
