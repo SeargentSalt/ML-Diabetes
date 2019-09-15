@@ -77,3 +77,8 @@ https://www.npmjs.com/package/react-images-upload
 
 npm install react-bootstrap bootstrap
 https://react-bootstrap.github.io/getting-started/introduction/
+
+npm install firebase
+
+npm i react-firebase-file-uploader
+https://www.npmjs.com/package/react-firebase-file-uploader
