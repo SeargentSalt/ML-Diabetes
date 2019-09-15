@@ -12,16 +12,18 @@ var firebaseConfig = {
     appId: "1:745848845016:web:714df48a3f71f4c3ed9dad"
   };
 firebase.initializeApp(firebaseConfig);
- 
+
 class UploadImage extends React.Component {
- 
+
     constructor(props) {
         super(props);
          this.state = { pictures: [] };
          this.onDrop = this.onDrop.bind(this);
     }
-    
- 
+
+     sendData = (Number) => {this.props.parentCallback(Number);};
+
+
     onDrop(picture) {
         this.setState({
             pictures: this.state.pictures.concat(picture),
@@ -38,6 +40,8 @@ class UploadImage extends React.Component {
                 react.once("value").then(data => {
                     if(data.val() !== null){
                         console.log(data.val());
+                        var num = data.val()
+                        this.sendData(num);
                     }
                     else {
                         console.log("nope");
@@ -47,7 +51,7 @@ class UploadImage extends React.Component {
               return () => clearTimeout(timer);
         }
     }
- 
+
     render() {
         return (
             <div>
