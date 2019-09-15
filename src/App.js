@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import 'react-bootstrap';
 import NavigationBar from './components/Navbar';
 import About from './components/About';
-import Display from './components/Display'
+import Display from './components/Display';
 
 class App extends Component {
 state = { message:""}
@@ -23,7 +23,7 @@ callbackFunction = (childData) => {
         <Header />
         <About />
 				<Display dataFromParent = {this.state.message} />
-        <UploadImage parentCallback = {this.callbackFunction} />
+        <UploadImage parentCallback = {this.callbackFunction} /> 
       </div>
     );
   }
