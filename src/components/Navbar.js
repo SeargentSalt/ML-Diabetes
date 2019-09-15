@@ -7,10 +7,10 @@ import Nav from 'react-bootstrap/Nav'
 export default function NavigationBar () {
   return (
 <Navbar bg="primary" variant="dark">
-    <Navbar.Brand href="#About">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#About">Blindness Detection</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#UploadImage">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#UploadImage"></Nav.Link>
+      <Nav.Link href="#features"></Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
